@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>文章列表</title>
+<link href="__PUBLIC__/Css/bootstrap.min.css" rel="stylesheet"/>
+<script src="__PUBLIC__/Js/jquery.min.js"></script>
+<script src="__PUBLIC__/Js/bootstrap.min.js"></script>
+<link href="__PUBLIC__/Css/public.css" rel="stylesheet"/>
+</head>
+
+<body>
+<div class="container">
+	<div class="row clearfix">
+	<div class="col-md-12 column">		
+	<ul class="nav nav-tabs">
+		<li ><a href="#">旅游信息</a></li>
+		<li><a href="#">个人信息修改</a></li>
+		<li ><a href="../Login/login">退出登录导航</a></li>	
+		</ul>
+
+	<div class="row clearfix">
+	<div class="col-md-2 column">
+		<ul class="nav nav-stacked nav-tabs">
+			<li><a href="index.html">热门目的地</a></li>
+				<li><a href="b2.html">文章列表</a></li>
+				<li ><a href="b3.html">用户信息管理</a></li>
+		</ul></div>
+                
+	<div class="col-md-10 column">
+	            <br>
+		<form action="__ACTION__" method="get" >
+		<div>
+		名称:<input type="text" name="name" value="{$name}">  
+
+		<input type="submit" value="查询"> 
+		</div>    	
+		</form><br/>
+                        
+                        <table class="table"  border="1" cellpadding="0">
+                        <thead>
+                        <tr>
+		<th>名称</th>
+                        <th width="80px">城市</th>
+                        <th>简介</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <foreach name="tour" item="v">
+			<tr class="warming">
+			<td>{$v.name}</td>
+                                    <td>{$v.city}</td>
+                                    <td>{$v.text}</td>
+                                    </tr>
+                        </foreach></tbody>
+                        </table>
+                        <div>{$page}</div>
+	</div>
+
+
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

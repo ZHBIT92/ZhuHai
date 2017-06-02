@@ -1,0 +1,48 @@
+﻿
+.pic-show{
+	text-align: center;
+	line-height: 18px
+}
+.pic-show a{
+            outline:none; 
+            color: #484848;
+            text-decoration: none;
+}
+.pic-show a:hover{
+	outline:none; 
+            color: #FF5A5F ;
+            text-decoration: none;
+}
+.pic-show img{
+	border='0' 
+}
+.pic-show p{
+	font-size: 18px
+}
+
+#form{
+      float: left;
+      background: #fff;
+      width: 300px;
+      height: 170px;
+      position: absolute;
+      left: 40%;
+      top:30%;
+      margin: auto 0; 
+      display: none;
+}
+
+#form a{
+      float: right;
+}
+
+#bg{
+      width:100%;
+      height:100%;
+      top:0px;
+      left:0px;
+      position:absolute;
+      filter: Alpha(opacity=10);
+      opacity:0.1;      
+      background:#000000; 
+      display:none;}

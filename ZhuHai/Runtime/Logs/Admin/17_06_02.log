@@ -1,0 +1,20 @@
+[ 2017-06-02T15:28:29+08:00 ] ::1 /test/admin.php/Admin/Index/upload
+ERR: 1048:Column 'path' cannot be null
+ [ SQL语句 ] : INSERT INTO `think_image` (`image`,`path`,`create_time`) VALUES (NULL,NULL,'1496388509')
+
+[ 2017-06-02T15:28:51+08:00 ] ::1 /test/admin.php/Admin/Index/upload
+ERR: 1048:Column 'path' cannot be null
+ [ SQL语句 ] : INSERT INTO `think_image` (`image`,`path`,`create_time`) VALUES (NULL,NULL,'1496388531')
+
+[ 2017-06-02T16:27:48+08:00 ] ::1 /test/admin.php/Admin/Index/upload
+ERR: 1048:Column 'image' cannot be null
+ [ SQL语句 ] : INSERT INTO `think_image` (`image`,`exts`,`create_time`) VALUES (NULL,NULL,'1496392068')
+
+[ 2017-06-02T16:31:00+08:00 ] ::1 /test/admin.php/Admin/Index/upload
+ERR: 1048:Column 'image' cannot be null
+ [ SQL语句 ] : INSERT INTO `think_image` (`image`,`exts`,`create_time`) VALUES (NULL,NULL,'1496392260')
+
+[ 2017-06-02T16:35:42+08:00 ] ::1 /test/admin.php/Admin/Index/upload
+ERR: 1048:Column 'exts' cannot be null
+ [ SQL语句 ] : INSERT INTO `think_image` (`image`,`exts`,`create_time`) VALUES ('zh2.jpg',NULL,'1496392542')
+

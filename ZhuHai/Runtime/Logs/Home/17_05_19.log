@@ -1,0 +1,40 @@
+[ 2017-05-19T16:13:30+08:00 ] 127.0.0.1 /ZhuHai/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.070854s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002261s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002583s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.013897s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.014234s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.143041s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.143350s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015945s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.016248s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.011113s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011770s ]
+
+[ 2017-05-19T16:52:44+08:00 ] 127.0.0.1 /ZhuHai/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001735s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002200s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002515s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000205s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000505s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043165s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043469s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004728s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004901s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.011134s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011321s ]
+

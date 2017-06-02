@@ -1,0 +1,73 @@
+body{
+            margin:0px auto;
+	font-size:12px;
+}
+.selectItemcont{padding:8px;}
+#selectItem{
+	background:#FFF;
+	position:absolute;top:0px;
+	left:center;border:1px solid #000;
+	overflow:hidden;
+	width:240px;z-index:1000;}
+.selectItemhidden{
+	display:none;
+}
+
+.pic-show{
+	text-align: center;
+	line-height: 18px
+}
+.pic-show a{
+            outline:none; 
+            color: #484848;
+            text-decoration: none;
+}
+.pic-show a:hover{
+	outline:none; 
+            color: #FF5A5F ;
+            text-decoration: none;
+}
+.pic-show img{
+	border='0' 
+}
+.pic-show p{
+	font-size: 18px
+}
+
+.contact{
+	background: #fff;
+	padding: 3% 0;
+	position: relative;	
+}
+.contact p{
+	padding-top:2em;
+	padding-bottom: 1em;
+	color:#a0a0a0;
+	font-size: 20px;
+	width: 37%;
+	margin: 0 auto;
+	line-height: 1.8em;
+}
+.contact form input[type = "text"],.contact form textarea{
+	display: block;
+	width: 300%;
+	padding: 5px;
+	margin-left:-50px;
+	margin-bottom: 1.2em;
+	border: 1px solid #364356;
+	font-size: 20px;
+	font-style: italic;
+	color:#a0a0a0;
+	outline: none;
+}
+.contact form input[type = "text"]:hover,.contact form textarea:hover{
+	border:1px solid #ff6d6b;
+}
+.contact form textarea{
+	height: 100px;
+	resize:none;
+}
+#commit{
+margin:0px auto;
+      width:300px ;	
+}

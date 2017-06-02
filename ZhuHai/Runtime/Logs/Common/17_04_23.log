@@ -1,0 +1,24 @@
+[ 2017-04-23T01:38:16+08:00 ] 127.0.0.1 /ZhuHai/index.php/Hone
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000553s ]
+ERR: 无法加载模块:Hone
+
+[ 2017-04-23T02:44:30+08:00 ] 127.0.0.1 /ZhuHai/admin.php/Login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000633s ]
+ERR: 无法加载模块:Login
+
+[ 2017-04-23T02:44:40+08:00 ] 127.0.0.1 /ZhuHai/admin.php/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000559s ]
+ERR: 无法加载模块:Login
+
+[ 2017-04-23T02:44:45+08:00 ] 127.0.0.1 /ZhuHai/admin.php/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000580s ]
+ERR: 无法加载模块:Index
+
