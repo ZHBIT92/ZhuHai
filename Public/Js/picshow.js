@@ -1,6 +1,6 @@
 $(function () {
 
-          $("img").click(function(){
+          $("img.img-circle").click(function(){
                 $("#form").show();
                 $('#bg').show();             
           });

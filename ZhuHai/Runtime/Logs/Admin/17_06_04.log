@@ -1,0 +1,9 @@
+[ 2017-06-04T10:54:17+08:00 ] ::1 /ZhuHai/admin.php/Admin/Login/runRegis.html
+ERR: Think\Controller:_post方法不存在！
+
+[ 2017-06-04T11:07:26+08:00 ] ::1 /ZhuHai/admin.php/Admin/Login/login.html
+ERR: Think\Controller:check方法不存在！
+
+[ 2017-06-04T11:07:33+08:00 ] ::1 /ZhuHai/admin.php/Admin/Login/login.html
+ERR: Think\Controller:check方法不存在！
+

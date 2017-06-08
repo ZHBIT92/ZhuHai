@@ -10,7 +10,7 @@ class LoginController extends Controller {
 //登录
       public function login()
      {
-      
+        
         //提取表单内容
         $account=$_POST["account"];
         $pwd =$_POST["pwd"];
@@ -19,6 +19,7 @@ class LoginController extends Controller {
 
         $user = M('user')->where($where)->find();
 
+        
         if (!$user || $user['password'] != $pwd) {
             $this->error('用户名或者密码不正确');
         }
@@ -35,7 +36,7 @@ class LoginController extends Controller {
             /*if (!$this->isPost()) {
                     halt('页面不存在');
              }*/
-            if ($_SESSION['verify'] != md5($_POST['verify'])) {
+            if ($_SESSION['verify'] != ($_POST['verify'])) {
                   $this->error('验证码错误');
              }
              if ($_POST['pwd'] != $_POST['pwded']) {
@@ -66,57 +67,16 @@ class LoginController extends Controller {
   }
 
       public function verify(){
-          $Verify =     new \Think\Verify();
+          $Verify =new \Think\Verify();
           // 设置验证码字符为纯数字
           $Verify->codeSet = '0123456789'; 
           $Verify->entry();
       }
 
-/**
-   * 异步验证账号是否已存在
-   */
-  Public function checkAccount () {
-    if (!$this->isAjax()) {
-      halt('页面不存在');
-    }
-    $account = $this->_post('account');
-    $where = array('account' => $account);
-    if (M('user')->where($where)->getField('id')) {
-      echo 'false';
-    } else {
-      echo 'true';
-    }
-  }
+      public function checkVerify($code, $id = ''){
+          $config = array('reset'=>true,);
+          $Verify =new \Think\Verify($config);
 
-  /**
-   * 异步验证昵称是否已存在
-   */
-  Public function checkUname () {
-    if (!$this->isAjax()) {
-      halt('页面不存在');
-    }
-    $username = $this->_post('uname');
-    $where = array('username' => $username);
-    if (M('userinfo')->where($where)->getField('id')) {
-      echo 'false';
-    } else {
-      echo 'true';
-    }
-  }
-
-      /**
-   * 异步验证验证码
-   */
-      Public function checkVerify () {
-             if (!$this->isAjax()) {
-               halt('页面不存在');
-             }
-          $verify = $this->_post('verify');
-             if ($_SESSION['verify'] != md5($verify)) {
-               echo 'false';
-             } else {
-               echo 'true';
-             }
-           }
-
+          return $verify->check($code,$id);
+      }
 }

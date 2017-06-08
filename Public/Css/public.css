@@ -7,3 +7,33 @@ a{
  text-decoration: none;
  color: #484848;
 }
+a:hover{       
+ text-decoration: none;
+ color: #FF5A5F;
+}
+
+a:link{       
+outline:none; 
+ text-decoration: none;
+ color: #484848;
+}
+
+#nav{
+	position:fixed;
+	width: 100%;
+	height: 43px;
+	background-color: #FCFCFC;
+	z-index:9999;
+}
+#time{
+	float: left;
+	position: absolute;
+	top:12px;
+	left: 30px;
+}
+#nav-show{
+	float: right;
+}
+
+
+

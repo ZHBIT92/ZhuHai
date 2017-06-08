@@ -10,15 +10,18 @@
 </head>
 
 <body>
+<nav>
+            <a href="/ZhuHai"><img id="home" src="/ZhuHai/Public/Images/位图蜗牛.png" width="50" height="50"></a>
+</nav>
 <div class="container">
 	<div class="row clearfix">
 	<div class="col-md-12 column">		
 	<ul class="nav nav-tabs">
-		<li ><a href="#">旅游信息</a></li>
-		<li><a href="#">个人信息修改</a></li>
-		<li ><a href="../Login/login">退出登录导航</a></li>	
+		<li ><a href="index.html">旅游信息</a></li>
+		<li><a href="info.html">个人信息修改</a></li>
+		<li ><a href="../Login/index">退出登录导航</a></li>	
 		</ul>
-
+		
 	<div class="row clearfix">
 	<div class="col-md-2 column">
 		<ul class="nav nav-stacked nav-tabs">
@@ -47,7 +50,7 @@
                         </thead>
                         <tbody>
                         <?php if(is_array($tour)): foreach($tour as $key=>$v): ?><tr class="warming">
-			<td><?php echo ($v["name"]); ?></td>
+			<td><a href="/ZhuHai/index.php/Home/Index/<?php echo ($v["src"]); ?>"><?php echo ($v["name"]); ?></a></td>
                                     <td><?php echo ($v["city"]); ?></td>
                                     <td><?php echo ($v["text"]); ?></td>
                                     </tr><?php endforeach; endif; ?></tbody>

@@ -6,13 +6,15 @@
 <link href="/ZhuHai/Public/Css/login.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="/ZhuHai/Public/Js/middle.js"></script>
 <script type="text/javascript" src="/ZhuHai/Public/Js/login.js"></script>
+    <script type="text/javascript" src="/ZhuHai/Public/Js/jquery-1.7.2.min.js"></script>
 <script type="text/javascript" src="/ZhuHai/Public/Js/jquery-validate.js"></script>
+
 </head>
 <body>
 
-<div id="home" style="float: right;">
-            <a href="/ZhuHai"> 首页 </a>
-</div>
+<nav>
+            <a href="/ZhuHai"><img id="home" src="/ZhuHai/Public/Images/位图蜗牛.png" width="50" height="50"></a>
+</nav>
 
  <div id="login" class="login"> 
 <form action="<?php echo U('login');?>" method="post"  name="login"  >
@@ -25,6 +27,7 @@
                 <input type="password" name="pwd" > 
                 </dl>
             </dd>
+          
             <input type="submit" value="登录" > 
             <input type="button" value="重置" onclick="reset()"> 
             <a href='<?php echo U("register");?>' >立即注册</a>

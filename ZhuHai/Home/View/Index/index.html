@@ -4,101 +4,139 @@
 <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
 <title>珠海旅游</title>
 <link href="__PUBLIC__/Css/index.css" rel="stylesheet">
-<script src="http://libs.baidu.com/jquery/1.8.3/jquery.min.js"></script>
-<script type="text/javascript" src="jquery.bgiframe.js"></script>
-<link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
-<script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
-<script>
- 
-jQuery.fn.selectCity = function(targetId) {
-	var _seft = this;
-	var targetId = $(targetId);
+<link href="__PUBLIC__/Css/bootstrap.min.css" rel="stylesheet"/>
+<link href="__PUBLIC__/Css/public.css" rel="stylesheet"/>
+<script src="__PUBLIC__/Js/jquery.min.js"></script>
+<script  src="__PUBLIC__/Js/jquery.bgiframe.js"></script>
+<script src="__PUBLIC__/Js/bootstrap.min.js"></script>
 
-	this.click(function(){
-		var A_top = $(this).offset().top + $(this).outerHeight(true);  //  1
-		var A_left =  $(this).offset().left;
-		targetId.bgiframe();
-		targetId.show().css({"position":"absolute","top":A_top+"px" ,"left":A_left+"px"});
-	});
-
-	targetId.find("#selectItemClose").click(function(){
-		targetId.hide();
-	});
-
-	targetId.find("#selectSub :checkbox").click(function(){		
-		targetId.find(":checkbox").attr("checked",false);
-		$(this).attr("checked",true);	
-		_seft.val( $(this).val() );
-		targetId.hide();
-	});
-
-	$(document).click(function(event){
-		if(event.target.id!=_seft.selector.substring(1)){
-			targetId.hide();	
-		}
-	});
-
-	targetId.click(function(e){
-		e.stopPropagation(); //  2
-	});
-    return this;
-}
- 
-$(function(){
-	//test1:
-	$("#address").selectCity("#selectItem");
-});
- </script>
 </head>
 
 <body>
-
 <!--导航-->
-<nav>
-            <img class="img-circle" src="__PUBLIC__/Images/位图蜗牛.png" width="50" height="50" >
-	<ul class="nav nav-pills pull-right">
-			<li><a href = "#">首页<span class="badge">12</span></a></li>
+<nav >
+<div id="nav" class="container">
+<div class="row clearfix">
+	<div class="col-md-4 column">
+	<span id="time"></span>
+	</div>
+	<div class="col-md-2 column">
+	<span id="time"></span>
+	</div>
+	<div class="col-md-6 column">
+	<ul class="nav nav-pills" id="nav-show">
+			<li><a href = "__ROOT__">首页<span class="badge">12</span></a></li>
 			<li><a href = "#">简介</a></li>
 			<li><a href = "#">消息<span class="badge">3</span></a></li>
-			<li><a href = "#">Map</a></li>
+			<li><a href = "./index.php/Home/Index/map.html">Map</a></li>
 			<li><a href = "./admin.php/Admin/Login/index">登录</a></li>	
 	</ul>
-</nav>
-<!--</div>-->
-
-<section class="container" style="text-align:center">
-	
-<div  class="jumbotron">
-        <h1 style="color: #FF5A5F">Love 爱旅行</h1>
-        <h1 style="color: #484848 ">旅行中，像当地人一样生活</h1>
+	</div>
 </div>
+</nav><br><br><br>
 
-<div id=select>
-     <div id=select-one>
-        <div id="select-address" class="pull-left">
+<!--</div>-->
+<!-- 显示浏览器窗口的实际尺寸 -->
+<!-- <form action="#" method="get" name="form1" id="form1">
+浏览器窗口 的 实际宽度 : <input type="text" name="availWidth" size="4"/><br />
+</form>  -->
+
+
+<section class="container" style="text-align:center" id="top">
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			<div class="carousel slide" id="carousel-477883">
+				<ol class="carousel-indicators">
+					<li class="active" data-slide-to="0" data-target="#carousel-477883">
+					</li>
+					<li data-slide-to="1" data-target="#carousel-477883">
+					</li>
+					<li data-slide-to="2" data-target="#carousel-477883">
+					</li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="item active">
+						<img alt="" src="__PUBLIC__/Images/top1.jpg" />
+						<div class="carousel-caption">
+							<h3>
+								马尔代夫
+							</h3>
+							<h4>
+								如果你一生中有很多次出国旅游的机会，那你一定要来马尔代夫.如果你一生中只有一次出国旅游的机会，那你更要来马尔代夫。
+							</h4>					
+						</div>
+					</div>
+					<div class="item">
+						<img alt="" src="__PUBLIC__/Images/default1.jpg" />
+						<div class="carousel-caption">
+							<h4>
+								Second Thumbnail label
+							</h4>
+							<p>
+								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+							</p>
+						</div>
+					</div>
+					<div class="item">
+						<img alt="" src="__PUBLIC__/Images/default2.jpg" />
+						<div class="carousel-caption">
+							<h4>
+								Third Thumbnail label
+							</h4>
+							<p>
+								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+							</p>
+						</div>
+					</div>
+				</div> 
+				<a class="left carousel-control" href="#carousel-477883" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left"></span></a> 
+				<a class="right carousel-control" href="#carousel-477883" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right" ></span></a>
+			</div>
+		</div>
+            </div><br>
+
+<div id=select >
+<div class="container">
+            <div class="row clearfix">
+		<div class="col-md-1 column">
+		     
+                        </div>
+		<div class="col-md-2 column">
+		     <div id="select-address" >
            <label for="name">目的地</label>
            <input type="text" class="form-control" placeholder="请输入你的目的地" id="address" name="address">
         </div>
-
-        <div id="select-time1" class="pull-left">
+		</div>
+		<div class="col-md-2 column">
+		    <div id="select-time1" >
            <label for="name">到达时间</label>
            <input type="date" class="form-control" placeholder="请输入时间" id="time1" name="time1">
          </div>
-
-         <div id="select-time2" class="pull-left">
+		</div>
+		<div class="col-md-2 column">
+                              <div id="select-time2" >
            <label for="name" >离开时间</label>
            <input type="date" class="form-control" placeholder="请输入时间" id="time2" name="time2">
          </div>
-
-           <div id="select-num" class="pull-left">
-           <div class="input-group">
+		</div>
+		<div class="col-md-2 column">
+		    <div id="select-num" >
            <label for="name">人数</label>
-           <input type="text" class="form-control" placeholder="请输入你的目的地" id="num" name="num">
-           <span class="input-group-btn"> 
-           <button type="button" class="btn btn-info btn-lg " >搜索</button>
-            </span>
-          </div></div>
-
+           <input type="text" class="form-control" placeholder="请输入人数" id="num" name="num">
+            </div>
+		</div>
+		<div class="col-md-2 column">
+		    <div id="select-button" class="pull-right">
+		    <button type="button" class="btn btn-info btn-lg " >搜索</button>
+		    </div>
+		</div>
+		<div class="col-md-1 column">		 
+		</div>
+	</div>
+</div>
+        
            <div id="selectItem" class="selectItemhidden"> 
 	           <div id="selectItemCount" class="selectItemcont"> 
 		<div id="selectSub"> 
@@ -109,9 +147,8 @@ $(function(){
 		</div> 
 	            </div> 
            </div> 
-     </div>
 </div>
-</section>
+</section><br><br>
 
 <article class="container">
       <header>
@@ -129,66 +166,94 @@ $(function(){
             <div id="myTabContent" class="tab-content">
             <br>
 	<div class="tab-pane fade in active" id="zh">
-	         <div class="row">
+	         <div class="row">	    
 	            <div class="col-md-4 column">
-	            <a href="javascript:onclick=show('zh1')">
+	            <a href="./index.php/Home/Index/zh1.html">
 	            <img class="img-circle" src="__PUBLIC__/Images/zh1.jpg" width="300" height="260" >
 	            <br><br>
 	            <p>珠海渔女</p>
 	            <p>有多少人喜欢</p></a></div>	
 
 		<div class="col-md-4 column">
-		<a href="javascript:onclick=show('zh2')">
+		<a href="./index.php/Home/Index/zh2.html">
 		<img class="img-circle" src="__PUBLIC__/Images/zh2.jpg" width="300" height="260" >
 		<br><br>
 		<p>长隆海洋王国</p></a></div>
 		
 		<div class="col-md-4 column">
-		<a href="javascript:onclick=show('zh3')">
+		<a href="./index.php/Home/Index/zh3.html">
 		<img class="img-circle" src="__PUBLIC__/Images/zh3.jpg" width="300" height="260" >
 		<br><br>
 		<p>圆明新园</p></a></div>
 	         </div>
 	</div>
-	<div class="tab-pane fade" id="sh">
-		<div class="row">
+	<div class="tab-pane fade" id="bj">
+		<div class="row">	    
 	            <div class="col-md-4 column">
-	            <img class="img-circle" src="__PUBLIC__/Images/位图蜗牛.png" width="350" height="250" >
-	            <p>图片1加文字（整个div作为点击链接）</p></div>
+	            <a href="./index.php/Home/Index/zh1.html">
+	            <img class="img-circle" src="__PUBLIC__/Images/bj1.jpg" width="300" height="260" >
+	            <br><br>
+	            <p>故宫</p>
+	            <p>有多少人喜欢</p></a></div>	
+
 		<div class="col-md-4 column">
-		<img class="img-circle" src="__PUBLIC__/Images/位图蜗牛.png" width="350" height="250" >
-		<p>图片2加文字（整个div作为点击链接）</p></div>
+		<a href="./index.php/Home/Index/zh2.html">
+		<img class="img-circle" src="__PUBLIC__/Images/bj2.jpg" width="300" height="260" >
+		<br><br>
+		<p>王府井</p></a></div>
+		
 		<div class="col-md-4 column">
-		<img class="img-circle" src="__PUBLIC__/Images/位图蜗牛.png" width="350" height="250" >
-		<p>图片3加文字（整个div作为点击链接）</p></div>
+		<a href="./index.php/Home/Index/zh3.html">
+		<img class="img-circle" src="__PUBLIC__/Images/bj3.jpg" width="300" height="260" >
+		<br><br>
+		<p>颐和园</p></a></div>
+	         </div>
+            </div>
+	<div class="tab-pane fade" id="sh">
+		<div class="row">	    
+	            <div class="col-md-4 column">
+	            <a href="./index.php/Home/Index/zh1.html">
+	            <img class="img-circle" src="__PUBLIC__/Images/sh1.jpg" width="300" height="260" >
+	            <br><br>
+	            <p>上海中心大厦</p>
+	            <p>有多少人喜欢</p></a></div>	
+
+		<div class="col-md-4 column">
+		<a href="./index.php/Home/Index/zh2.html">
+		<img class="img-circle" src="__PUBLIC__/Images/sh2.jpg" width="300" height="260" >
+		<br><br>
+		<p>上海迪士尼乐园</p></a></div>
+		
+		<div class="col-md-4 column">
+		<a href="./index.php/Home/Index/zh3.html">
+		<img class="img-circle" src="__PUBLIC__/Images/sh3.jpg" width="300" height="260" >
+		<br><br>
+		<p>上海奉贤海湾旅游区</p></a></div>
 	         </div>
 	</div>
 	<div class="tab-pane fade" id="cd">
-		<div class="row">
+		<div class="row">	    
 	            <div class="col-md-4 column">
-	            <img class="img-circle" src="__PUBLIC__/Images/位图蜗牛.png" width="350" height="250" >
-	            <p>图片1加文字（整个div作为点击链接）</p></div>
+	            <a href="./index.php/Home/Index/zh1.html">
+	            <img class="img-circle" src="__PUBLIC__/Images/cd1.jpg" width="300" height="260" >
+	            <br><br>
+	            <p>宽窄巷子</p>
+	            <p>有多少人喜欢</p></a></div>	
+
 		<div class="col-md-4 column">
-		<img class="img-circle" src="__PUBLIC__/Images/位图蜗牛.png" width="350" height="250" >
-		<p>图片2加文字（整个div作为点击链接）</p></div>
+		<a href="./index.php/Home/Index/zh2.html">
+		<img class="img-circle" src="__PUBLIC__/Images/cd2.jpg" width="300" height="260" >
+		<br><br>
+		<p>锦里</p></a></div>
+		
 		<div class="col-md-4 column">
-		<img class="img-circle" src="__PUBLIC__/Images/位图蜗牛.png" width="350" height="250" >
-		<p>图片3加文字（整个div作为点击链接）</p></div>
+		<a href="./index.php/Home/Index/zh3.html">
+		<img class="img-circle" src="__PUBLIC__/Images/cd3.jpg" width="300" height="260" >
+		<br><br>
+		<p>都江堰</p></a></div>
 	         </div>
 	</div>
-	<div class="tab-pane fade" id="bj">
-		<div class="row">
-	            <div class="col-md-4 column">
-	            <img class="img-circle" src="__PUBLIC__/Images/位图蜗牛.png" width="350" height="250" >
-	            <p>图片1加文字（整个div作为点击链接）</p></div>
-		<div class="col-md-4 column">
-		<img class="img-circle" src="__PUBLIC__/Images/位图蜗牛.png" width="350" height="250" >
-		<p>图片2加文字（整个div作为点击链接）</p></div>
-		<div class="col-md-4 column">
-		<img class="img-circle" src="__PUBLIC__/Images/位图蜗牛.png" width="350" height="250" >
-		<p>图片3加文字（整个div作为点击链接）</p></div>
-	         </div>
-            </div>
+	
             </div>
       </section>
 </article>
@@ -200,43 +265,55 @@ $(function(){
 <section class="pic-show">
             <div class="row">
 	            <div class="col-md-3 column">
-	            <img class="img-circle" src="__PUBLIC__/Images/位图蜗牛.png" width="150" height="250" >
-	            <p>图片1加文字（整个div作为点击链接）</p></div>
+	            <a href="./index.php/Home/Index/zh2.html">
+		<img class="img-circle" src="__PUBLIC__/Images/zh2.jpg" width="240" height="230" >
+		<br><br>
+		<p>长隆海洋王国</p></a></div>
 		<div class="col-md-3 column">
-		<img class="img-circle" src="__PUBLIC__/Images/位图蜗牛.png" width="150" height="250" >
-		<p>图片2加文字（整个div作为点击链接）</p></div>
+		<a href="./index.php/Home/Index/zh2.html">
+		<img class="img-circle" src="__PUBLIC__/Images/zh2.jpg" width="240" height="230" >
+		<br><br>
+		<p>长隆海洋王国</p></a></div>
 		<div class="col-md-3 column">
-		<img class="img-circle" src="__PUBLIC__/Images/位图蜗牛.png" width="150" height="250" >
-		<p>图片3加文字（整个div作为点击链接）</p></div>
+		<a href="./index.php/Home/Index/zh2.html">
+		<img class="img-circle" src="__PUBLIC__/Images/zh2.jpg" width="240" height="230" >
+		<br><br>
+		<p>长隆海洋王国</p></a></div>
 		<div class="col-md-3 column">
-	            <img class="img-circle" src="__PUBLIC__/Images/位图蜗牛.png" width="150" height="250" >
-	            <p>图片4加文字（整个div作为点击链接）</p></div>
+	            <a href="./index.php/Home/Index/zh2.html">
+		<img class="img-circle" src="__PUBLIC__/Images/zh2.jpg" width="240" height="230" >
+		<br><br>
+		<p>长隆海洋王国</p></a></div>
 	</div>
 </section>
 </article>
 
 <div class="container">
             <header>
-                 <h1>出发吧</h1>
+                 <h1>义工旅行</h1>
 　　     </header>
 <section class="pic-show">
 	<div class="row clearfix">
 		<div class="col-md-3 column">
-		<img class="img-circle" src="__PUBLIC__/Images/位图蜗牛.png" width="250" height="250" >
-	            <p>图片1加文字（整个div作为点击链接）</p>
-		</div>
+	            <a href="http://www.zxg365.com/travel_job/detail_1933.html">
+		<img  src="__PUBLIC__/Images/yg1.jpg" width="240" height="230" >
+		<br><br>
+		<p>大理洱海达岸海景客栈</p></a></div>
 		<div class="col-md-3 column">
-		<img class="img-circle" src="__PUBLIC__/Images/位图蜗牛.png" width="250" height="250" >
-	            <p>图片1加文字（整个div作为点击链接）</p>
-		</div>
+		<a href="http://www.zxg365.com/travel_job/detail_1901.html">
+		<img  src="__PUBLIC__/Images/yg2.jpg" width="240" height="230" >
+		<br><br>
+		<p>成都蒸汽旅舍</p></a></div>
 		<div class="col-md-3 column">
-		<img class="img-circle" src="__PUBLIC__/Images/位图蜗牛.png" width="250" height="250" >
-	            <p>图片1加文字（整个div作为点击链接）</p>
-		</div>
-		<div class="col-md-3 column">
-		<img class="img-circle" src="__PUBLIC__/Images/位图蜗牛.png" width="250" height="250" >
-	            <p>图片1加文字（整个div作为点击链接）</p>
-		</div>
+		<a href="http://www.zxg365.com/travel_job/detail_1958.html">
+		<img  src="__PUBLIC__/Images/yg3.jpg" width="240" height="230" >
+		<br><br>
+		<p>厦门84HOW青年旅舍</p></a></div>
+		<div class="col-md-3 column">	
+	            <a href="http://www.zxg365.com/travel_job/detail_1746.html">
+		<img  src="__PUBLIC__/Images/yg4.jpg" width="240" height="230" >
+		<br><br>
+		<p>香格里拉花儿国际青年旅舍</p></a></div>
 	</div>
 </section>
 </div>
@@ -265,5 +342,6 @@ $(function(){
 	</div>
 	<br><br>
 </footer>
+<script src="__PUBLIC__/Js/public.js"></script>
 </body>
 </html>

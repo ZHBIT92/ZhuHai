@@ -10,15 +10,18 @@
 </head>
 
 <body>
+<nav>
+            <a href="__ROOT__"><img id="home" src="__PUBLIC__/Images/位图蜗牛.png" width="50" height="50"></a>
+</nav>
 <div class="container">
 	<div class="row clearfix">
 	<div class="col-md-12 column">		
 	<ul class="nav nav-tabs">
-		<li ><a href="#">旅游信息</a></li>
-		<li><a href="#">个人信息修改</a></li>
-		<li ><a href="../Login/login">退出登录导航</a></li>	
+		<li ><a href="index.html">旅游信息</a></li>
+		<li><a href="info.html">个人信息修改</a></li>
+		<li ><a href="../Login/index">退出登录导航</a></li>	
 		</ul>
-
+		
 	<div class="row clearfix">
 	<div class="col-md-2 column">
 		<ul class="nav nav-stacked nav-tabs">
@@ -48,7 +51,7 @@
                         <tbody>
                         <foreach name="tour" item="v">
 			<tr class="warming">
-			<td>{$v.name}</td>
+			<td><a href="__ROOT__/index.php/Home/Index/{$v.src}">{$v.name}</a></td>
                                     <td>{$v.city}</td>
                                     <td>{$v.text}</td>
                                     </tr>

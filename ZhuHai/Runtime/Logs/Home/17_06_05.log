@@ -1,0 +1,18 @@
+[ 2017-06-05T00:29:02+08:00 ] ::1 /ZhuHai/index.php/Home/Index/zh2.html
+ERR: 非法操作:zh2
+
+[ 2017-06-05T13:26:59+08:00 ] ::1 /ZhuHai/index.php/Home/Index/zh3.html
+ERR: 非法操作:zh3
+
+[ 2017-06-05T14:38:27+08:00 ] ::1 /ZhuHai/index.php/Home/Index/admin.php/Admin/Login/index
+ERR: 非法操作:admin.php
+
+[ 2017-06-05T14:38:32+08:00 ] ::1 /ZhuHai/index.php/Home/Index/admin.php/Admin/Login/index
+ERR: 非法操作:admin.php
+
+[ 2017-06-05T14:46:59+08:00 ] ::1 /ZhuHai/index.php/Home/Index/admin.php/Admin/Login/index
+ERR: 非法操作:admin.php
+
+[ 2017-06-05T14:48:42+08:00 ] ::1 /ZhuHai/index.php/Home/Index/admin.php/Admin/Login/index
+ERR: 非法操作:admin.php
+

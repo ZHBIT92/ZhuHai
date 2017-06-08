@@ -15,6 +15,10 @@
 	</script>
 </head>
 <body>
+<nav>
+            <a href="/ZhuHai"><img id="home" src="/ZhuHai/Public/Images/位图蜗牛.png" width="50" height="50"></a>
+</nav>
+
 	<div id='reg-wrap'>
 		<form action="<?php echo U('runRegis');?>" method='post' name='register'>
 			<fieldset>

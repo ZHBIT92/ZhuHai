@@ -1,11 +1,19 @@
 body{
             margin:0px auto;
-	font-size:12px;
+            font-size: 18px
 }
+
+#select-button{
+             position: absolute;
+             top:13px;
+
+}
+
 .selectItemcont{padding:8px;}
 #selectItem{
 	background:#FFF;
-	position:absolute;top:0px;
+	position:absolute;
+	top:0px;
 	left:center;border:1px solid #000;
 	overflow:hidden;
 	width:240px;z-index:1000;}
@@ -20,7 +28,6 @@ body{
 .pic-show a{
             outline:none; 
             color: #484848;
-            text-decoration: none;
 }
 .pic-show a:hover{
 	outline:none; 
@@ -65,9 +72,10 @@ body{
 }
 .contact form textarea{
 	height: 100px;
+	width: 485px;
 	resize:none;
 }
 #commit{
 margin:0px auto;
-      width:300px ;	
+      width:380px ;	
 }
