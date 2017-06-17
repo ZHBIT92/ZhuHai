@@ -41,21 +41,19 @@ winWidth = document.documentElement.clientWidth;
 
 if(winWidth<=600){
   $('#time').hide();
-  if(winWidth<=392){
-  $("#nav").css('height','85px');
+  if(winWidth<422){
+  $("#nav").css('height','93px');
   }
-  else if(winWidth>=393){
+  else if(winWidth>=422){
     $("#nav").css('height','43px');
 }
 }
 else{
   $('#time').show();  
-  if(winWidth>=393){
+  if(winWidth>=422){
     $("#nav").css('height','43px');
   }
 }
-
-
 }
 
 findDimensions();  // 调用函数，获取数值

@@ -1,0 +1,6 @@
+[ 2017-06-12T19:50:49+08:00 ] ::1 /ZhuHai/admin.php/Admin/Index/b2.html
+ERR: 模板不存在:./ZhuHai/Admin/View/Index/b2.html
+
+[ 2017-06-12T20:31:01+08:00 ] 127.0.0.1 /ZhuHai/admin.php/Admin/Index/add1
+ERR: 非法操作:add1
+

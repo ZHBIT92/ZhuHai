@@ -1,0 +1,58 @@
+[ 2017-06-14T16:22:03+08:00 ] 127.0.0.1 /ZhuHai/admin.php/Admin/Index/delete2/sno/
+ERR: 非法操作:delete2
+
+[ 2017-06-14T17:03:10+08:00 ] 127.0.0.1 /ZhuHai/admin.php/Admin/Index/delete2/sno/
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : DELETE FROM `think_tour` WHERE ( lno =  )
+
+[ 2017-06-14T17:03:13+08:00 ] 127.0.0.1 /ZhuHai/admin.php/Admin/Index/delete2/sno/
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : DELETE FROM `think_tour` WHERE ( lno =  )
+
+[ 2017-06-14T17:05:32+08:00 ] 127.0.0.1 /ZhuHai/admin.php/Admin/Index/delete2/id/16
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : DELETE FROM `think_tour` WHERE ( id =  )
+
+[ 2017-06-14T17:05:45+08:00 ] 127.0.0.1 /ZhuHai/admin.php/Admin/Index/delete2/id/12
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : DELETE FROM `think_tour` WHERE ( id =  )
+
+[ 2017-06-14T17:05:50+08:00 ] 127.0.0.1 /ZhuHai/admin.php/Admin/Index/delete2/id/12
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : DELETE FROM `think_tour` WHERE ( id =  )
+
+[ 2017-06-14T17:05:55+08:00 ] 127.0.0.1 /ZhuHai/admin.php/Admin/Index/delete2/id/12
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : DELETE FROM `think_tour` WHERE ( id =  )
+
+[ 2017-06-14T17:10:09+08:00 ] 127.0.0.1 /ZhuHai/admin.php/Admin/Index/delete2/id/11
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : DELETE FROM `think_tour` WHERE ( id =  )
+
+[ 2017-06-14T17:11:03+08:00 ] 127.0.0.1 /ZhuHai/admin.php/Admin/Index/delete2/id/12
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : DELETE FROM `think_tour` WHERE ( id =  )
+
+[ 2017-06-14T17:11:16+08:00 ] 127.0.0.1 /ZhuHai/admin.php/Admin/Index/delete2/id/12
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : DELETE FROM `think_tour` WHERE ( id =  )
+
+[ 2017-06-14T17:11:19+08:00 ] 127.0.0.1 /ZhuHai/admin.php/Admin/Index/delete2/id/12
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : DELETE FROM `think_tour` WHERE ( id =  )
+
+[ 2017-06-14T17:47:53+08:00 ] ::1 /ZhuHai/admin.php/Admin/b2.html
+ERR: 无法加载控制器:B2
+
+[ 2017-06-14T23:31:42+08:00 ] 127.0.0.1 /ZhuHai/admin.php/Admin/Index/info.html
+ERR: 非法操作:info
+
+[ 2017-06-14T23:32:41+08:00 ] 127.0.0.1 /ZhuHai/admin.php/Admin/Index/info
+ERR: 非法操作:info
+
+[ 2017-06-14T23:34:12+08:00 ] 127.0.0.1 /ZhuHai/admin.php/Admin/Info/index.html
+ERR: 非法操作:index
+
+[ 2017-06-14T23:34:56+08:00 ] 127.0.0.1 /ZhuHai/admin.php/Admin/Info/index.html
+ERR: 非法操作:index
+

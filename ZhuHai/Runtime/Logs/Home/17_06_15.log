@@ -1,0 +1,12 @@
+[ 2017-06-15T10:19:57+08:00 ] 127.0.0.1 /ZhuHai/index.php/Home/Index/admin.php/Admin/Login/index
+ERR: 非法操作:admin.php
+
+[ 2017-06-15T19:50:51+08:00 ] 127.0.0.1 /ZhuHai/index.php/Home/Index/index.php/Home/Index/map.html
+ERR: 非法操作:index.php
+
+[ 2017-06-15T19:51:54+08:00 ] 127.0.0.1 /ZhuHai/index.php/Home/Index/index.php/Home/Index/map.html
+ERR: 非法操作:index.php
+
+[ 2017-06-15T20:05:16+08:00 ] 127.0.0.1 /ZhuHai/index.php/Home/Index/index.php/Home/Index/map.html
+ERR: 非法操作:index.php
+

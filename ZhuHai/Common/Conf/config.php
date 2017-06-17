@@ -28,7 +28,7 @@ return array(
                   '__CSS__' => __ROOT__ . '/Public/Css',
                   '__IMAGE__' => __ROOT__ . '/Public/Images',
                   '__DATA__' => __ROOT__ . '/Data/'*/
-         
+             'URL_CASE_INSENSITIVE' => true,
 
              //页面调试工具
 	'SHOW_PAGE_TRACE' =>true,

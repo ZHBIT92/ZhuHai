@@ -9,8 +9,7 @@ class LoginController extends Controller {
 
 //登录
       public function login()
-     {
-        
+     {   
         //提取表单内容
         $account=$_POST["account"];
         $pwd =$_POST["pwd"];
@@ -25,7 +24,7 @@ class LoginController extends Controller {
         }
 
         //登录成功写入SESSION并且跳转到首页
-        session('uid', $user['userid']);
+        session('account', $account);
 
         $this->success('正在登录...', U('Index/index'));
       }

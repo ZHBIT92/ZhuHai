@@ -1,0 +1,36 @@
+[ 2017-06-15T00:11:37+08:00 ] 127.0.0.1 /ZhuHai/admin.php/Admin/Info/b2.html
+ERR: 非法操作:b2
+
+[ 2017-06-15T00:19:15+08:00 ] 127.0.0.1 /ZhuHai/admin.php/Admin/Info/b2.html
+ERR: 非法操作:b2
+
+[ 2017-06-15T00:19:31+08:00 ] 127.0.0.1 /ZhuHai/admin.php/Admin/Info/b2.html
+ERR: 非法操作:b2
+
+[ 2017-06-15T21:50:32+08:00 ] 127.0.0.1 /ZhuHai/admin.php/Admin/Index/info.html
+ERR: 非法操作:info
+
+[ 2017-06-15T21:59:28+08:00 ] 127.0.0.1 /ZhuHai/admin.php/Admin/Info/upload
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '} )' at line 1
+ [ SQL语句 ] : UPDATE `think_user` SET `user_image`='bj1.jpg',`create_time`='1497535168' WHERE ( account={$account} )
+
+[ 2017-06-15T22:00:53+08:00 ] 127.0.0.1 /ZhuHai/admin.php/Admin/Info/upload
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `think_user` SET `user_image`='bj1.jpg',`create_time`='1497535253' WHERE ( account= )
+
+[ 2017-06-15T22:01:24+08:00 ] 127.0.0.1 /ZhuHai/admin.php/Admin/Info/upload
+ERR: 1054:Unknown column 'admin' in 'where clause'
+ [ SQL语句 ] : UPDATE `think_user` SET `user_image`='bj1.jpg',`create_time`='1497535283' WHERE ( account=admin )
+
+[ 2017-06-15T22:03:26+08:00 ] 127.0.0.1 /ZhuHai/admin.php/Admin/Info/upload
+ERR: 1054:Unknown column 'admin' in 'where clause'
+ [ SQL语句 ] : UPDATE `think_user` SET `user_image`='bj1.jpg',`create_time`='1497535406' WHERE ( account=admin )
+
+[ 2017-06-15T23:29:42+08:00 ] 127.0.0.1 /ZhuHai/admin.php/Admin/Index/index
+ERR: 1054:Unknown column 'img_name' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `think_image` WHERE ( img_name='' ) LIMIT 1  
+
+[ 2017-06-15T23:30:23+08:00 ] 127.0.0.1 /ZhuHai/admin.php/Admin/Index/index.html
+ERR: 1054:Unknown column 'img_name' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `think_image` WHERE ( img_name='' ) LIMIT 1  
+

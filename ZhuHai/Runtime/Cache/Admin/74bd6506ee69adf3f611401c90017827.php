@@ -5,7 +5,7 @@
 <title>信息概论</title>
 
 <link href="/ZhuHai/Public/Css/bootstrap.min.css" rel="stylesheet"/>
-<link href="/ZhuHai/Public/Css/picshow.css" rel="stylesheet"/>
+<link href="/ZhuHai/Public/Css/show.css" rel="stylesheet"/>
 <link href="/ZhuHai/Public/Css/public.css" rel="stylesheet"/>
 
 </head>
@@ -20,7 +20,7 @@
 	<div class="col-md-12 column">		
 	<ul class="nav nav-tabs">
 		<li ><a href="index.html">旅游信息</a></li>
-		<li><a href="info.html">个人信息修改</a></li>
+		<li><a href="../Info/info">个人信息修改</a></li>
 		<li ><a href="../Login/index">退出登录导航</a></li>	
 		</ul>
 
@@ -33,6 +33,7 @@
 			</ul></div>
                 
 		<div class="col-md-10 column">
+		<br>
 		<section class="pic-show" id="pic-show" >
 			<ul id="myTab" class="nav nav-tabs">
                                     <li><a href="#zh" data-toggle="tab">珠海</a></li>	
@@ -48,7 +49,7 @@
 	            <div class="tab-pane fade in active" id="zh">
 	                        <div class="row">
                                     <div class="col-md-4 column">
-                                            <?php if(!empty($data)): ?><img class="img-circle" src="/ZhuHai/Public/Images/<?php echo ($data["image"]); ?>" width="200" height="160" /><?php endif; ?>                                        
+                                            <?php if(!empty($data)): ?><img class="img-circle" src="/ZhuHai/Public/Images/<?php echo ($data["image"]); ?>" width="200" height="160" id="zh1" /><?php endif; ?>                                        
                                     <br><br>
 	                        <p>珠海渔女</p>
 	                        <button type="button">修改</button></div>	
@@ -107,19 +108,25 @@
                         </div>
 
                         </section>
-		</div>
-	</div>
-	</div>
 
-            <div id="form">
-          
-            <form action="/ZhuHai/admin.php/Admin/Index/upload" method="post" enctype="multipart/form-data" >
+                        <div id="form">
+                        <div style="width:400px;position:relative;left:56%;top:20px;margin-left:-215px;"><br>
+             <p >修改图片</p>
+            <hr width="70%" align="left">
+            <form action="/ZhuHai/index.php/Admin/Index/upload" method="post" enctype="multipart/form-data" >
                         <input type="file" name="photo" id="photo" />
+                        <input type="text" name="imagename" id="imagename" value="111"/>
                         <input type="submit" value="提交" >
             </form>
             <br><br>
             <a href="#"  id="form-close">点击关闭</a>
-            </div>
+            </div></div>
+
+	</div>
+	</div>
+	</div>
+
+            
             
             </div>
 </div>
@@ -127,7 +134,6 @@
 
 <script src="/ZhuHai/Public/Js/jquery.min.js"></script>
 <script src="/ZhuHai/Public/Js/bootstrap.min.js"></script>
-<script src="/ZhuHai/Public/Js/picshow.js"></script>
-
+<script src="/ZhuHai/Public/Js/show.js"></script>
 </body>
 </html>

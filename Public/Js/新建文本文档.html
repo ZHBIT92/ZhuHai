@@ -1,0 +1,69 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>jquery 测试</title>
+
+<script type="text/javascript" src="jquery.min.js"></script>
+
+</head>
+<body>
+
+<div>
+jquery修改a标签的href链接和文字,先点击下面链接<br />然后点击"改变"按钮，然后再点击一次下面的链接，注意两次打开页面的不同：<br />
+A<a href="http://i.firefoxchina.cn/" id="a1">原文</a> 
+<input type="button" value="改变A" id="a11" /><p></p>
+
+Span<span id="span1">原文</span> 
+<input type="button" value="改变span" id="span11" /><p></p>
+
+Div<div id="div1" target="_blank">原文</div> 
+<input type="button" value="改变DIV" id="div11" />
+</div>
+<p></p>
+input<input type="text" name="text1" id="text1" value="111">
+<input type="button" value="改变input" id="text11" /><p></p>
+
+textarea <input type="textarea" name="textarea1" id="textarea1" value="111">
+<input type="button" value="改变textarea" id="textarea11" /><p></p>
+
+<input type="button" value="改变button" id="button11" /><p></p>
+<script type="text/javascript">
+$("#a11").bind("click",
+	function (){
+		$('#a1').attr('href','http://www.baidu.com'); 
+		alert("改变了超链接链接地址")
+		$("#a1").text('首页1');
+		alert("改变显示的内容1")
+		$("#a1").html('首页2');
+		alert("改变显示的内容2")
+	})
+$("#span11").bind("click",
+	function (){
+		$("#span1").html('首页');
+		alert("改变显示内容")
+		$("#span1").text('首页');
+	})
+$("#div11").bind("click",
+	function (){
+		$("#div1").html('首页1');
+		alert("改变显示内容1")
+		$("#div1").text('首页2');
+		alert("改变显示内容2")
+	})
+$("#text11").bind("click",
+	function (){
+		$("#text1").val('首页');
+	})
+$("#textarea11").bind("click",
+	function (){
+		$("#textarea1").val('首页');	
+	})
+$("#button11").bind("click",
+	function (){
+		$("#button11").val('首页');	
+	})		
+
+</script>
+
+</body>
+</html>
